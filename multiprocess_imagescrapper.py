@@ -121,7 +121,7 @@ def multiprocess_scrap_image_and_save_to_dest(list_of_url_and_dest_folder):
     t1 = time.time()
     number_of_process_to_create = min(len(list_of_url_and_dest_folder), MAX_PROCESS)
     if list_of_url_and_dest_folder:
-        p = Pool(1)
+        p = Pool(number_of_process_to_create)
         p.map(scrap_url_and_write_to_dest_dir, list_of_url_and_dest_folder)
         p.terminate()
         p.join()

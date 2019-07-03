@@ -45,6 +45,8 @@ def generate_url_and_dest_list_for_one_category_devred(category_clothing):
     :return: a list of tuple (url, dest_dir) containg urls to scrap and the dest directories where to save the images
     """
     # type: () -> list
+    logger.info("Start to construct all urls for the category \'{}\'".format(category_clothing).upper())
+
     category_url = '{}{}/'.format(DEVRED_URL,category_clothing)
 
     number_of_page = scrap_last_page_index_for_one_category(category_url)
