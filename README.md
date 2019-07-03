@@ -24,8 +24,8 @@ are exemple of how you could use `multiprocess_imagescrapper.py`
 Here we are scrapping images from two french clothing e-commerce:
 [www.imparfaiteparis.com](https://www.imparfaiteparis.com/) and [www.devred.com](https://www.devred.com/)
 
-![imparfaite_shop](read_me_images/imparfaite_shop.png?raw=true "Imparfaite shop")
-![devred_shop](read_me_images/devred_shop.png?raw=true "Devred shop")
+![imparfaite_shop](README_images/imparfaite_shop.png?raw=true "Imparfaite shop")
+![devred_shop](README_images/devred_shop.png?raw=true "Devred shop")
 
 #  How to use the scrapping module
 
