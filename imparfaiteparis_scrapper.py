@@ -1,6 +1,8 @@
 """
 
-Some code to use the multiprocess scrapping library
+This code scrap images from https://imparfaiteparis.com using the multiprocess scrapping module.
+
+It scrap all the image from the clothing category specified in config.py. (the clothing category from imparfaiteparis are in French)
 
 """
 
