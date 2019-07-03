@@ -15,9 +15,11 @@ are exemple of how you could use `multiprocess_imagescrapper.py`
 
 
 Here we are scrapping images from two french clothing e-commerce:
-[www.imparfaiteparis.com](https://www.imparfaiteparis.com/) and [www.devred.com](https://www.devred.com/)
-
+[www.imparfaiteparis.com](https://www.imparfaiteparis.com/)
 ![imparfaite_shop](read_me_images/imparfaite_shop.png?raw=true "Imparfaite shop")
+
+
+and [www.devred.com](https://www.devred.com/)
 ![devred_shop](read_me_images/devred_shop.png?raw=true "Devred shop")
 
 
