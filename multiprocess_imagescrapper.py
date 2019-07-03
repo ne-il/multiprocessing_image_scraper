@@ -110,7 +110,7 @@ def multiprocess_scrap_image_and_save_to_dest(list_of_url_and_dest_folder):
     """ Using multiprocessing, this function scraps every image from a list of url and save them in the local destination directory
 
     Multiprocessing brings a huge improvement in term of execution time for scrapping process.
-    The main reason being multiprocessing eliminates the latency due to sequential API call
+    The main reason being multiprocessing eliminates the latency due to sequential API call and I/O operations.
 
     We create as many workers as url to scrap to launch API calls and system I/O operation concurrently. The number of workers is maxed by
     MAX_PROCESS (300 by default) to avoid taking to much system memory
@@ -121,7 +121,7 @@ def multiprocess_scrap_image_and_save_to_dest(list_of_url_and_dest_folder):
     t1 = time.time()
     number_of_process_to_create = min(len(list_of_url_and_dest_folder), MAX_PROCESS)
     if list_of_url_and_dest_folder:
-        p = Pool(number_of_process_to_create)
+        p = Pool(1)
         p.map(scrap_url_and_write_to_dest_dir, list_of_url_and_dest_folder)
         p.terminate()
         p.join()

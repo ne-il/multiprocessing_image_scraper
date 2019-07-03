@@ -61,7 +61,7 @@ def generate_url_and_dest_list_for_one_category_imparfaite(category):
     category_url = "{}{}".format(IMPARFAITE_URL, category)
     number_of_page = scrap_last_page_index_for_one_category(category_url)
 
-    dest_dir = 'imparfaite_scrapped_images/{}'.format(category)
+    dest_dir = 'scrapped_images/imparfaite/{}'.format(category)
 
     # using map and lambda, it generates a list of all page url for the specified clothing category with the destination directory
     all_urls_for_this_category_with_dest_dir = list(

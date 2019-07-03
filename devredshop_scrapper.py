@@ -49,7 +49,7 @@ def generate_url_and_dest_list_for_one_category_devred(category_clothing):
 
     number_of_page = scrap_last_page_index_for_one_category(category_url)
 
-    dest_dir = "devred_images/{}".format(category_clothing)
+    dest_dir = "scrapped_images/devred/{}".format(category_clothing)
 
     # using map and lambda, it generates a list of all page url for the specified clothing category with the destination directory
     all_urls_for_this_category = list(
